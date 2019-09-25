@@ -1877,3 +1877,251 @@ FOREIGN KEY ("publisher_id")
   [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (127.7ms)[0m  [1m[31mDELETE FROM "authors";[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.3ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'authors';[0m
+  [1m[35m (76.1ms)[0m  [1m[31mDELETE FROM "publishers";[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.3ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'publishers';[0m
+  [1m[35m (82.7ms)[0m  [1m[31mDELETE FROM "books";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'books';[0m
+  [1m[35m (91.9ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/api/books" for 127.0.0.1 at 2019-09-24 20:11:00 -0500
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (109.5ms)[0m  [1m[31mDELETE FROM "authors";[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'authors';[0m
+  [1m[35m (71.2ms)[0m  [1m[31mDELETE FROM "publishers";[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.3ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'publishers';[0m
+  [1m[35m (68.0ms)[0m  [1m[31mDELETE FROM "books";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'books';[0m
+  [1m[35m (103.9ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+Started GET "/api/books" for 127.0.0.1 at 2019-09-24 20:11:58 -0500
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (115.7ms)[0m  [1m[31mDELETE FROM "authors";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.1ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'authors';[0m
+  [1m[35m (66.1ms)[0m  [1m[31mDELETE FROM "publishers";[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.4ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'publishers';[0m
+  [1m[35m (97.1ms)[0m  [1m[31mDELETE FROM "books";[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.3ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'books';[0m
+  [1m[35m (75.1ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mPublisher Create (0.3ms)[0m  [1m[32mINSERT INTO "publishers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "O'Reilly"], ["created_at", "2019-09-25 01:14:23.604062"], ["updated_at", "2019-09-25 01:14:23.604062"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mAuthor Create (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("given_name", "family_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["given_name", "Pat"], ["family_name", "Shaughnessy"], ["created_at", "2019-09-25 01:14:23.615182"], ["updated_at", "2019-09-25 01:14:23.615182"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_10" = ? LIMIT ?[0m  [["isbn_10", "1593275617"], ["LIMIT", 1]]
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_13" = ? LIMIT ?[0m  [["isbn_13", "9781593275617"], ["LIMIT", 1]]
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "subtitle", "isbn_10", "isbn_13", "description", "released_on", "publisher_id", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ruby Under a Microscope"], ["subtitle", "An Illustrated Guide to Ruby Internals"], ["isbn_10", "1593275617"], ["isbn_13", "9781593275617"], ["description", "Ruby Under a Microscope is a cool book!"], ["released_on", "2013-09-01"], ["publisher_id", 1], ["author_id", 1], ["created_at", "2019-09-25 01:14:23.618872"], ["updated_at", "2019-09-25 01:14:23.618872"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mAuthor Create (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("given_name", "family_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["given_name", "Michael"], ["family_name", "Hartl"], ["created_at", "2019-09-25 01:14:23.621234"], ["updated_at", "2019-09-25 01:14:23.621234"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_10" = ? LIMIT ?[0m  [["isbn_10", "0134077709"], ["LIMIT", 1]]
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_13" = ? LIMIT ?[0m  [["isbn_13", "9780134077703"], ["LIMIT", 1]]
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "subtitle", "isbn_10", "isbn_13", "description", "released_on", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ruby on Rails Tutorial"], ["subtitle", "Learn Web Development with Rails"], ["isbn_10", "0134077709"], ["isbn_13", "9780134077703"], ["description", "The Rails Tutorial is great!"], ["released_on", "2013-05-09"], ["author_id", 2], ["created_at", "2019-09-25 01:14:23.623772"], ["updated_at", "2019-09-25 01:14:23.623772"]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mPublisher Create (0.3ms)[0m  [1m[32mINSERT INTO "publishers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "O'Reilly"], ["created_at", "2019-09-25 01:14:23.627870"], ["updated_at", "2019-09-25 01:14:23.627870"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mAuthor Create (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("given_name", "family_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["given_name", "Pat"], ["family_name", "Shaughnessy"], ["created_at", "2019-09-25 01:14:23.629842"], ["updated_at", "2019-09-25 01:14:23.629842"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_10" = ? LIMIT ?[0m  [["isbn_10", "1593275617"], ["LIMIT", 1]]
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_13" = ? LIMIT ?[0m  [["isbn_13", "9781593275617"], ["LIMIT", 1]]
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "subtitle", "isbn_10", "isbn_13", "description", "released_on", "publisher_id", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ruby Under a Microscope"], ["subtitle", "An Illustrated Guide to Ruby Internals"], ["isbn_10", "1593275617"], ["isbn_13", "9781593275617"], ["description", "Ruby Under a Microscope is a cool book!"], ["released_on", "2013-09-01"], ["publisher_id", 1], ["author_id", 1], ["created_at", "2019-09-25 01:14:23.632484"], ["updated_at", "2019-09-25 01:14:23.632484"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mAuthor Create (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("given_name", "family_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["given_name", "Michael"], ["family_name", "Hartl"], ["created_at", "2019-09-25 01:14:23.634368"], ["updated_at", "2019-09-25 01:14:23.634368"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_10" = ? LIMIT ?[0m  [["isbn_10", "0134077709"], ["LIMIT", 1]]
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_13" = ? LIMIT ?[0m  [["isbn_13", "9780134077703"], ["LIMIT", 1]]
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "subtitle", "isbn_10", "isbn_13", "description", "released_on", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ruby on Rails Tutorial"], ["subtitle", "Learn Web Development with Rails"], ["isbn_10", "0134077709"], ["isbn_13", "9780134077703"], ["description", "The Rails Tutorial is great!"], ["released_on", "2013-05-09"], ["author_id", 2], ["created_at", "2019-09-25 01:14:23.636744"], ["updated_at", "2019-09-25 01:14:23.636744"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mPublisher Create (0.3ms)[0m  [1m[32mINSERT INTO "publishers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "O'Reilly"], ["created_at", "2019-09-25 01:14:23.640520"], ["updated_at", "2019-09-25 01:14:23.640520"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mAuthor Create (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("given_name", "family_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["given_name", "Pat"], ["family_name", "Shaughnessy"], ["created_at", "2019-09-25 01:14:23.642447"], ["updated_at", "2019-09-25 01:14:23.642447"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_10" = ? LIMIT ?[0m  [["isbn_10", "1593275617"], ["LIMIT", 1]]
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_13" = ? LIMIT ?[0m  [["isbn_13", "9781593275617"], ["LIMIT", 1]]
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "subtitle", "isbn_10", "isbn_13", "description", "released_on", "publisher_id", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ruby Under a Microscope"], ["subtitle", "An Illustrated Guide to Ruby Internals"], ["isbn_10", "1593275617"], ["isbn_13", "9781593275617"], ["description", "Ruby Under a Microscope is a cool book!"], ["released_on", "2013-09-01"], ["publisher_id", 1], ["author_id", 1], ["created_at", "2019-09-25 01:14:23.645071"], ["updated_at", "2019-09-25 01:14:23.645071"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mAuthor Create (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("given_name", "family_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["given_name", "Michael"], ["family_name", "Hartl"], ["created_at", "2019-09-25 01:14:23.646992"], ["updated_at", "2019-09-25 01:14:23.646992"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_10" = ? LIMIT ?[0m  [["isbn_10", "0134077709"], ["LIMIT", 1]]
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_13" = ? LIMIT ?[0m  [["isbn_13", "9780134077703"], ["LIMIT", 1]]
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "subtitle", "isbn_10", "isbn_13", "description", "released_on", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ruby on Rails Tutorial"], ["subtitle", "Learn Web Development with Rails"], ["isbn_10", "0134077709"], ["isbn_13", "9780134077703"], ["description", "The Rails Tutorial is great!"], ["released_on", "2013-05-09"], ["author_id", 2], ["created_at", "2019-09-25 01:14:23.649827"], ["updated_at", "2019-09-25 01:14:23.649827"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (108.8ms)[0m  [1m[31mDELETE FROM "authors";[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.3ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'authors';[0m
+  [1m[35m (127.6ms)[0m  [1m[31mDELETE FROM "publishers";[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.3ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'publishers';[0m
+  [1m[35m (76.4ms)[0m  [1m[31mDELETE FROM "books";[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.3ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'books';[0m
+  [1m[35m (73.1ms)[0m  [1m[31mDELETE FROM "ar_internal_metadata";[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+  [1m[35m (0.2ms)[0m  [1m[31mDELETE FROM sqlite_sequence where name = 'ar_internal_metadata';[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mPublisher Create (0.3ms)[0m  [1m[32mINSERT INTO "publishers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "O'Reilly"], ["created_at", "2019-09-25 01:15:20.886930"], ["updated_at", "2019-09-25 01:15:20.886930"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mAuthor Create (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("given_name", "family_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["given_name", "Pat"], ["family_name", "Shaughnessy"], ["created_at", "2019-09-25 01:15:20.897199"], ["updated_at", "2019-09-25 01:15:20.897199"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_10" = ? LIMIT ?[0m  [["isbn_10", "1593275617"], ["LIMIT", 1]]
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_13" = ? LIMIT ?[0m  [["isbn_13", "9781593275617"], ["LIMIT", 1]]
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "subtitle", "isbn_10", "isbn_13", "description", "released_on", "publisher_id", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ruby Under a Microscope"], ["subtitle", "An Illustrated Guide to Ruby Internals"], ["isbn_10", "1593275617"], ["isbn_13", "9781593275617"], ["description", "Ruby Under a Microscope is a cool book!"], ["released_on", "2013-09-01"], ["publisher_id", 1], ["author_id", 1], ["created_at", "2019-09-25 01:15:20.900891"], ["updated_at", "2019-09-25 01:15:20.900891"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mAuthor Create (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("given_name", "family_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["given_name", "Michael"], ["family_name", "Hartl"], ["created_at", "2019-09-25 01:15:20.903189"], ["updated_at", "2019-09-25 01:15:20.903189"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_10" = ? LIMIT ?[0m  [["isbn_10", "0134077709"], ["LIMIT", 1]]
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_13" = ? LIMIT ?[0m  [["isbn_13", "9780134077703"], ["LIMIT", 1]]
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "subtitle", "isbn_10", "isbn_13", "description", "released_on", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ruby on Rails Tutorial"], ["subtitle", "Learn Web Development with Rails"], ["isbn_10", "0134077709"], ["isbn_13", "9780134077703"], ["description", "The Rails Tutorial is great!"], ["released_on", "2013-05-09"], ["author_id", 2], ["created_at", "2019-09-25 01:15:20.905709"], ["updated_at", "2019-09-25 01:15:20.905709"]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mPublisher Create (0.3ms)[0m  [1m[32mINSERT INTO "publishers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "O'Reilly"], ["created_at", "2019-09-25 01:15:20.909536"], ["updated_at", "2019-09-25 01:15:20.909536"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mAuthor Create (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("given_name", "family_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["given_name", "Pat"], ["family_name", "Shaughnessy"], ["created_at", "2019-09-25 01:15:20.911444"], ["updated_at", "2019-09-25 01:15:20.911444"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_10" = ? LIMIT ?[0m  [["isbn_10", "1593275617"], ["LIMIT", 1]]
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_13" = ? LIMIT ?[0m  [["isbn_13", "9781593275617"], ["LIMIT", 1]]
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "subtitle", "isbn_10", "isbn_13", "description", "released_on", "publisher_id", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ruby Under a Microscope"], ["subtitle", "An Illustrated Guide to Ruby Internals"], ["isbn_10", "1593275617"], ["isbn_13", "9781593275617"], ["description", "Ruby Under a Microscope is a cool book!"], ["released_on", "2013-09-01"], ["publisher_id", 1], ["author_id", 1], ["created_at", "2019-09-25 01:15:20.914090"], ["updated_at", "2019-09-25 01:15:20.914090"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mAuthor Create (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("given_name", "family_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["given_name", "Michael"], ["family_name", "Hartl"], ["created_at", "2019-09-25 01:15:20.916011"], ["updated_at", "2019-09-25 01:15:20.916011"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_10" = ? LIMIT ?[0m  [["isbn_10", "0134077709"], ["LIMIT", 1]]
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_13" = ? LIMIT ?[0m  [["isbn_13", "9780134077703"], ["LIMIT", 1]]
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "subtitle", "isbn_10", "isbn_13", "description", "released_on", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ruby on Rails Tutorial"], ["subtitle", "Learn Web Development with Rails"], ["isbn_10", "0134077709"], ["isbn_13", "9780134077703"], ["description", "The Rails Tutorial is great!"], ["released_on", "2013-05-09"], ["author_id", 2], ["created_at", "2019-09-25 01:15:20.918431"], ["updated_at", "2019-09-25 01:15:20.918431"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mPublisher Create (0.3ms)[0m  [1m[32mINSERT INTO "publishers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "O'Reilly"], ["created_at", "2019-09-25 01:15:20.922660"], ["updated_at", "2019-09-25 01:15:20.922660"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mAuthor Create (0.2ms)[0m  [1m[32mINSERT INTO "authors" ("given_name", "family_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["given_name", "Pat"], ["family_name", "Shaughnessy"], ["created_at", "2019-09-25 01:15:20.924783"], ["updated_at", "2019-09-25 01:15:20.924783"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_10" = ? LIMIT ?[0m  [["isbn_10", "1593275617"], ["LIMIT", 1]]
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_13" = ? LIMIT ?[0m  [["isbn_13", "9781593275617"], ["LIMIT", 1]]
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "subtitle", "isbn_10", "isbn_13", "description", "released_on", "publisher_id", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ruby Under a Microscope"], ["subtitle", "An Illustrated Guide to Ruby Internals"], ["isbn_10", "1593275617"], ["isbn_13", "9781593275617"], ["description", "Ruby Under a Microscope is a cool book!"], ["released_on", "2013-09-01"], ["publisher_id", 1], ["author_id", 1], ["created_at", "2019-09-25 01:15:20.927753"], ["updated_at", "2019-09-25 01:15:20.927753"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mAuthor Create (0.1ms)[0m  [1m[32mINSERT INTO "authors" ("given_name", "family_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["given_name", "Michael"], ["family_name", "Hartl"], ["created_at", "2019-09-25 01:15:20.930110"], ["updated_at", "2019-09-25 01:15:20.930110"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_2[0m
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_10" = ? LIMIT ?[0m  [["isbn_10", "0134077709"], ["LIMIT", 1]]
+  [1m[36mBook Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "books" WHERE "books"."isbn_13" = ? LIMIT ?[0m  [["isbn_13", "9780134077703"], ["LIMIT", 1]]
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "subtitle", "isbn_10", "isbn_13", "description", "released_on", "author_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Ruby on Rails Tutorial"], ["subtitle", "Learn Web Development with Rails"], ["isbn_10", "0134077709"], ["isbn_13", "9780134077703"], ["description", "The Rails Tutorial is great!"], ["released_on", "2013-05-09"], ["author_id", 2], ["created_at", "2019-09-25 01:15:20.932908"], ["updated_at", "2019-09-25 01:15:20.932908"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
