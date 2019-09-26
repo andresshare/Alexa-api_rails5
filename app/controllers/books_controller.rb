@@ -1,10 +1,8 @@
 class BooksController < ApplicationController
 
-  
-
-def index
-    books = filter(sort(paginate(Book.all))).map do |book|
-      FieldPicker.new(BookPresenter.new(book, params)).pick
+  def index
+    books = orchestrate_query(Book.all).map do |book|
+      BookPresenter.new(book, params).fields.embeds
     end
 
     render json: { data: books }.to_json
