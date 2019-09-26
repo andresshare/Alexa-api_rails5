@@ -1,13 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe 'Publishers', type: :request do
+RSpec.describe 'Authors', type: :request do
 
-  let(:oreilly) { create(:publisher) }
-  let(:dev_media) { create(:dev_media) }
-  let(:super_books) { create(:super_books) }
-  let(:publishers) { [oreilly, dev_media, super_books] }
+  let(:pat) { create(:author) }
+  let(:michael) { create(:michael_hartl) }
+  let(:sam) { create(:sam_ruby) }
+  let(:authors) { [pat, michael, sam] }
 
-  describe 'GET /api/publishers' do
+  describe 'GET /api/authors' do    
     context 'default behavior' do
     end
 
@@ -18,6 +18,7 @@ RSpec.describe 'Publishers', type: :request do
       end
       context 'with invalid field name "fid"' do
       end
+
     end
 
     describe 'pagination' do
@@ -37,38 +38,40 @@ RSpec.describe 'Publishers', type: :request do
     end
 
     describe 'filtering' do
-      context 'with valid filtering param "q[name_cont]=Reilly"' do
+      context 'with valid filtering param "q[given_name_cont]=Pat"' do
       end
-      context 'with invalid filtering param "q[fname_cont]=Reilly"' do
+      context 'with invalid filtering param "q[fgiven_name_cont]=Pat"' do
       end
     end
+
   end
 
-  describe 'GET /api/publishers/:id' do
+  describe 'GET /api/authors/:id' do
     context 'with existing resource' do
     end
     context 'with nonexistent resource' do
     end
   end
 
-  describe 'POST /api/publishers' do
+  describe 'POST /api/authors' do
     context 'with valid parameters' do
     end
     context 'with invalid parameters' do
     end
   end
 
-  describe 'PATCH /api/publishers/:id' do
+  describe 'PATCH /api/authors/:id' do
     context 'with valid parameters' do
     end
     context 'with invalid parameters' do
     end
   end
 
-  describe 'DELETE /api/publishers/:id' do
+  describe 'DELETE /api/authors/:id' do
     context 'with existing resource' do
     end
     context 'with nonexistent resource' do
     end
   end
+
 end

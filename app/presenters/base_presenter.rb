@@ -1,4 +1,25 @@
 class BasePresenter
+
+
+  attr_accessor :object, :params, :data
+
+  def initialize # Hidden Code
+  def as_json # Hidden Code
+
+  def build(actions)
+    actions.each { |action| send(action) }
+    self
+  end
+
+  def fields
+    FieldPicker.new(self).pick
+  end
+
+  def embeds
+    EmbedPicker.new(self).embed
+  end
+
+
   CLASS_ATTRIBUTES = {
     build_with: :build_attributes,
     related_to: :relations,
